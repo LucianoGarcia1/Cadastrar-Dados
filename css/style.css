@@ -1,0 +1,132 @@
+:root{
+    --black: #222;
+    --gray: #ccc;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+.title{
+    font-size: 3em;
+    color: var(--black);
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+input, select{
+    max-width: 300px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--black);
+    color: var(--black);
+    padding-left: 30px;
+    font-size: 0.9em;
+}
+
+select{
+    background-color: var(--black);
+    color: white !important;
+}
+
+form button{
+    max-width: 300px;
+    width: 100%;
+    height: 45px;
+    color: var(--black);
+    background-color: var(--gray);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 600;
+    transition: all .5s;
+}
+
+form button:hover{
+    animation: showBtn 0.25s linear;
+}
+
+@keyframes showBtn {
+    0%{
+        transform: translate3d(-50px, 0 , 0);
+    }
+
+    50%{
+        transform: translate3d(50px, 0 , 0);
+    }
+
+}
+
+.dados{
+    width: 100%;
+    min-height: auto;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.dados div{
+    min-width: 15%;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 10px 10px 30px;
+    border-radius: 4px;
+}
+
+.dados div h3{
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.dados div p{
+    font-size: 1.2em;
+}
+
+.dados div button{
+    margin-bottom: 10px;
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--white);
+}
+
+button img{
+    width: 25px;
+    height: 25px;
+}
+
